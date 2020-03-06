@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String SubNames = subInp.getText().toString();
                 list.add(SubNames);
+                SubList.setAdapter(arrayAdapter);
                 Context context = getApplicationContext();
                 CharSequence text = "Đã Nhập!" ;
                 int duration = Toast.LENGTH_SHORT ;
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SubList.setAdapter(arrayAdapter);
+
                 Context context = getApplicationContext();
                 CharSequence text = "Cập nhập thành công!" ;
                 int duration = Toast.LENGTH_SHORT ;
@@ -60,4 +61,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }
