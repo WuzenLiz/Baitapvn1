@@ -27,9 +27,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
         //Define
         btnInput = findViewById(R.id.btnInput);
         btnUpdate = findViewById(R.id.btnUpdate);
